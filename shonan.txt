@@ -1,0 +1,128 @@
+"Fuzzing and Symbolic Execution: Reflections, Challenges, and Opportunities"
+
+At Shonan Village Center, Japan
+Tuesday, September 24-Friday, September 27, 2019
+
+The meeting is organized by:
+
+-Marcel Boehme, Monash University, Australia
+-Cristian Cadar, Imperial College London, United Kingdom
+-Abhik Roychoudhury, NUS, Singapore
+
+
+NII Shonan Meeting is a series of informatics seminars managed
+by NII, aiming to internationally promote informatics research.
+Each meeting, following the style of well-known Dagstuhl
+Seminars, is organized by established researchers in their
+field. Attendance is by invitation only.
+
+NII Shonan Meeting provides a venue to bring together both
+leading scientists and promising young researchers so that they
+can exchange their knowledge, discuss their research findings
+and explore cutting-edge topics.
+
+NII Shonan Meeting official website:
+http://shonan.nii.ac.jp/shonan/
+
+*New website will be open late April: 
+https://shonan.nii.ac.jp
+
+
+
+***************************************
+<<Description of the meeting>>
+
+-Overview
+
+The problem of finding software errors by automated input
+generation--i.e., automated software testing--is currently
+investigated within several mostly isolated academic research
+communities:
+
+1. The symbolic execution (SE) research community casts testing
+as a constraint satisfaction problem and studies formal
+approaches to automated software testing.
+2. The search-based software testing (SBST) research community
+casts testing as an optimization problem and studies
+metaheuristics, such as genetic algorithms, to tackle automated
+software testing.
+3. The fuzzing research community is interested particularly in
+exposing security flaws in critical software systems, and
+leverages both techniques, with substantial recent success in
+an area called coverage-based greybox fuzzing.
+
+This problem has also received significant attention from the
+industry. The industry is interested in finding errors at the
+very large scale, with several notable examples discussed next.
+Google is running the OSS-Fuzz project which has found thousands
+of errors in security-critical open source projects over the last
+three years. Microsoft is running Project Springfield, a cloud-based
+testing-as-a-service framework. Facebook has successfully
+deployed an automated Android testing tool, Sapienz, which is
+tightly integrated in their Continuous Deployment process.
+
+
+-Motivation
+
+Despite the shared high-level objective, there has been little
+interaction across these communities. As a concrete example, the
+fuzzing community leverages a compact terminology that is very
+different from that of the SE and SBST communities. The fuzzing
+community publishes in security venues (CCS, NDSS, S&P, TIFS)
+while the SE and SBST communities publish in software engineering
+venues (ICSE, FSE, ISSTA, ASE, TSE, TOSEM). Many ideas that have
+long been discussed in the SE and SBST communities are now being
+re-discovered in the fuzzing community.
+
+The research communities have much to learn from industry, too.
+Driven by the need for scale and enabled by the availability of
+abundant computational resources, members of the industry have
+developed some of the most advanced and highly efficient
+automated testing tools. Much can be learned by studying these
+tools from a research perspective. On the one hand, industry has
+found practical solutions to open research problems. On the other
+hand, the industry faces interesting practical challenges that
+are yet unbeknownst to the research community. It is our position
+that the proposed meeting can help establish a conversation.
+
+
+-Objective
+
+It is the purpose of this meeting to bring together the thought
+leaders, distinguished researchers, tool builders, founders,
+and promising young researchers from each of these communities.
+We will discuss recent advances and open challenges in
+automated software testing (with specific focus on security
+vulnerability detection) through the lens of both research and
+industry. We will review the state of the art, establish common
+ground, and discuss a roadmap of important problems to address
+in the near- and long-term. We plan to document the results of
+this meeting for the larger research community and publish in
+an appropriate outlet. We hope that this meeting sparks new
+collaborations across research communities, between research
+and industry, and among individuals with vastly different
+backgrounds and expertise. We also hope the meeting invigorates
+and accelerates research on software vulnerability detection by
+building and extending the theoretical foundation as well as by
+providing practical and immediate benefit to the industry.
+
+
+-Why now?
+
+We feel that the current moment is suitable for such a workshop
+because the various individual technologies have gained maturity
+and hence a conversation across the sub-communities should be
+productive. The symbolic execution community has gained
+prominence with the development of mature tools like KLEE. The
+fuzz testing community has seen an explosion of works in the
+recent years, starting with the work of AFLFast which studies the
+science behind greybox fuzzing. Meanwhile the SBST community has
+also developed mature technologies like Evosuite. At the same
+time, all of these techniques could potentially benefit from
+learning approaches which glean information about the input
+domain or the application processing it. In this meeting, we plan
+to discuss the common themes behind these techniques and identify
+the research opportunities in terms of crossfertilization. A
+concrete outcome of the meeting will be a review article of these
+areas published in a journal such as IEEE Transactions on
+Software Engineering.
